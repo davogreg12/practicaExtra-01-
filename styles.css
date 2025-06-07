@@ -1,0 +1,116 @@
+/*cajas*/
+
+body{
+    margin: 0;
+    background-color: #1e1e1e;
+}
+
+#upperPart{
+    box-sizing: border-box;
+    border: none;
+    width: 100%;
+    height: fit-content;
+    padding: 30px;
+    background-color: #333;
+    margin: 0;
+    border: none;
+    border-bottom: solid 5px #666;
+}
+
+#principal{
+    height: 100%;
+    border: none;
+    box-sizing: border-box;
+}
+
+#box{
+    border: solid;
+    width: 300px;
+    height: fit-content;
+    margin: 30px auto;
+    box-shadow: 0 0 13px #bfbfbf;
+    background-color: #555;
+    border-radius: 10px;
+}
+
+#formulario{
+    margin-bottom: 20px;
+
+}
+/*elementos*/
+
+#title{
+    font-size: 3em;
+    width: fit-content;
+    color: #eee;
+    margin: 10px;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont;
+    text-shadow: 0 0 10px #fff;
+}
+
+h2{
+    text-align: center;
+    color: #00bcd4;
+    text-shadow: 0 0 10px #33bcd4;
+    font-family: "courier new";
+    font-size: 2em;
+}
+
+.form{
+    margin: 10px;
+    background-color: #444;
+    color: #ddd;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    width: 80%;
+}
+
+.file{
+    margin: 10px;
+    background-color: #444;
+    color: #ddd;
+    font-family: sans-serif;
+    font-size: 0.7em;
+    width: 80%;
+}
+label{
+    color: #eee;
+    text-shadow: 0 0 10px #fff;
+    font-size: 1em;
+    margin-left: 12px;
+    font-family: verdana;
+}
+
+.labelSmall{
+    color: #eee;
+    text-shadow: 0 0 10px #fff;
+    font-size: 0.8em;
+    margin-left: 12px;
+    font-family: verdana;
+}
+
+.send{
+    display: block;
+    margin: 10px auto;
+    background-color: #fff;
+    color: #555;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    width: fit-content;
+}
+
+textarea{
+    min-height: fit-content;
+    resize: none;
+    margin: 10px;
+    background-color: #444;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    width: 80%;
+}
+
+.important{
+    color: #c00;
+    text-shadow: none;
+}

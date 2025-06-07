@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist y select</title>
+    <link rel="stylesheet" href="styles.css">
+    <!--Favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <!--Metatags y OG metatags-->
+    <meta name="title" content="Datalist y select" />
+    <meta name="description" content="Página para practicar datalist y select :V" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Datalist y select" />
+    <meta property="og:description" content="Página para practicar datalist y select :V" />
+    <meta property="og:image" content="img/miniatura" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="" />
+    <meta property="twitter:title" content="Datalist y select" />
+    <meta property="twitter:description" content="Página para practicar datalist y select :V" />
+    <meta property="twitter:image" content="img/miniatura" />
+    <!-- Meta Tags Generated with https://metatags.io -->
+</head>
+<body>
+    <!--Parte alta principal-->
+    <div id="upperPart">
+            <h1 id="title">Datalist</h1>
+    </div>
+    <!--principal-->
+    <div id="principal">
+        <div id="box">
+            <h2>Formulario</h2>
+            
+            <div id="formulario">
+                <form>
+                    <label>
+                        ¿Cuál es su nombre?<span class="important">*</span><br>
+                    <input class="form" required>
+                    </label>
+
+                    <label>
+                        Indique que día es:<br>
+                    <input type="date" class="form" required>
+                    </label>
+
+                    <label>
+                        Indique que hora es:<br>
+                    <input type="time" class="form" required>
+                    </label>
+
+                    <label>
+                        Continente:<br>
+                        <input type="text" list="continentes" class="form" required>
+                        <datalist id="continentes">
+                            <option value="América del Norte"></option>
+                            <option value="América del Sur"></option>
+                            <option value="Asia"></option>
+                            <option value="Europa"></option>
+                            <option value="Oceanía"></option>
+                        </datalist>
+                    </label>
+
+                    <label>
+                        ¿Cuántos idiomas habla?<br>
+                        <input type="text" list="conocer" class="form" required>
+                        <datalist id="conocer">
+                            <option value="Bilingüe">2 idiomas</option>
+                            <option value="Trilingüe">3 idiomas</option>
+                            <option value="Políglota">más de 3 idiomas</option>
+                        </datalist>
+                    </label>
+
+                    <label>
+                        Cuentenos su experiencia:
+                        <textarea rows="5" required></textarea>
+                    </label>
+
+                    <label>
+                        ¿Desea enviar una imagen?
+                        <input type="file" class="file">
+                    </label>
+
+                    <br>
+
+                    <label class="labelSmall">
+                        ¿Acepta los Terminos y Condiciones?<span class="important">*</span>
+                        <input type="checkbox" required>
+                    </label>
+
+                    <input type="submit" class="send">
+                    
+                </form>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
